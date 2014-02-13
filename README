@@ -1,10 +1,11 @@
 Introduction:
-These two script, trainInfo.py and trainInfo.php are designed to read a .csv file, and output it in a human-friendly format. They are written in python and php,respectively. For the purpose of testing the python program, an additional unittest file testTrainInfo can be used.
+These three scripts, trainInfo.py, trainInfo.php and trainInfo.rb are designed to read a .csv file, and output it in a human-friendly format. They are written in python, php and ruby respectively. For the purpose of testing the python program, an additional unittest file testTrainInfo can be used.
 
 Program List:
 1. trainInfo.py:	Python program to read and display train information.
 2. trainInfo.php:	PHP program to read and display train information.
-3. testTrainInfo.py:	Unittest used to test the python program above.
+3. trainRuby.rb:	Ruby program to read and display train information.
+4. testTrainInfo.py:	Unittest used to test the python program above.
 
 
 Instruction:
@@ -15,6 +16,8 @@ Instruction:
 	test1.csv
 4. To use the python script, input the command. Name of the input file has been written in the script, called "test1.csv": 
 	php trainInfo.php
+5. To use the ruby script, input the command. Name of the input file has been written in the script, called "test1.csv":
+	ruby trainInfo.rb
 5. To test the python application, input the unittest case:
 	python testTrainInfo.py
 	test1.csv
