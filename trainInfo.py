@@ -11,10 +11,16 @@ def trainInfoFunc( ):
 		result.append(line)
 	result = result[1:]
 	temp = sorted(result, key=lambda result: result[2])
-
-# Output the result in a human-friendly format
-	print('Train Line' + '\t' + 'Route' + '\t\t' + 'Run Number' + '\t' + 'Operator ID')
-	for i in range(0, len(temp)):
-		print(temp[i][0] + '\t\t' + temp[i][1] + '\t' + temp[i][2] + '\t\t' + temp[i][3])
 	f.close()
 	return temp
+
+def printFunc(result):
+        print('Train Line' + '\t' + 'Route' + '\t\t' + 'Run Number' + '\t' + 'Operator ID')
+# Output the result in a human-friendly format
+        for i in range(0, len(result)):
+                print(result[i][0] + '\t\t' + result[i][1] + '\t' + result[i][2] + '\t\t' + result[i][3])
+
+
+if __name__ == '__main__':
+	finalResult = trainInfoFunc()
+	printFunc(finalResult)	
